@@ -8,3 +8,25 @@ These files are just one possible implementation of their idea. I created it to 
 
 # Usage
 Download the files in this repository to get an "empty" labbook. Run the Perl script `_addNewDay.pl` to add a new LaTeX file for today, you can find it as `YYYY/MM/YYYYMMDD.tex` where `YYYY`, `MM` and `DD` stand for today's year, month and day, respectively. Use your favourite editor to write down today's progress. Compile `Labbook.tex`. Done.
+
+# Details
+## Predefined Files
+`commandLibrary.tex`
+* Put custom commands (e.g. `\newcommand{}{}`) in here
+
+`documentSetup.tex`
+* Include packages, their settings and other global document settings here
+
+`Labbook.tex`
+* Compile this file to get your labbook
+* You should not need to touch this, although you sometimes may want to comment out single years to speed up compilation
+
+`Appendix/*.tex`
+* These files contain quotes from */u/riboch* describing what to put in here. Of course, feel free to adjust this as you like
+
+`Bibliograpyh/Bibliography.tex`
+* Put BiLaTeX bibliography tags in here
+
+## Guidelines
+* Each new day gets a `\label{sec:YYYYMMDD}` so you can `\nameref{}` to each day in your labbook
+* Put figures etc. in a subfolder for the respective day, i.e. in `YYYY/MM/DD/figure.png`
