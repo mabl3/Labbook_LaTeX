@@ -20,12 +20,13 @@ Download the files in this repository to get an "empty" labbook. Run the Perl sc
 `Labbook.tex`
 * Compile this file to get your labbook
 * You should not need to touch this, although you sometimes may want to comment out single years to speed up compilation
+* Do not touch the `[PERL INPUT TAG]`!
 
 `Appendix/*.tex`
 * These files contain quotes from */u/riboch* describing what to put in here. Of course, feel free to adjust this as you like
 
 `Bibliograpyh/Bibliography.tex`
-* Put BiLaTeX bibliography tags in here
+* Put BibLaTeX bibliography tags in here
 
 ## Guidelines
 * Each new day gets a `\label{sec:YYYYMMDD}` so you can `\nameref{}` to each day in your labbook
