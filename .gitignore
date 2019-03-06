@@ -1,0 +1,8 @@
+# ignore LaTeX generated intermediate files
+*.aux
+*.log
+*.out
+*.run.xml
+*.syntex.gz
+*.toc
+*-blx.bib
